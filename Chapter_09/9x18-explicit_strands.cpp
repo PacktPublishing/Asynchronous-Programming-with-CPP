@@ -25,7 +25,7 @@ class Logger {
 
     void log(const std::string message) {
         //strand_.post(std::bind(&Logger::do_log, this, message));
-        strand_.post([this, message]() { do_log(message); });
+        boost::asio::post( strand_, [this, message]() { do_log(message); });
     }
 
    private:

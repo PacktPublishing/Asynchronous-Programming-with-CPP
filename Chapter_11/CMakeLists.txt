@@ -1,6 +1,8 @@
 # Output directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BINARY_DIR}/Chapter_11)
 
+find_package( spdlog REQUIRED )
+
 # Create executable for each cpp file
 file(GLOB SOURCES "*.cpp")
 foreach(SOURCE ${SOURCES})

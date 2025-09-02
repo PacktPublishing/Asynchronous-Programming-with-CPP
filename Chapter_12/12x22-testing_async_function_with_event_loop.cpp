@@ -7,7 +7,7 @@
 using namespace std::chrono_literals;
 
 void asyncFunc(boost::asio::io_context& io_context, std::function<void(int)> callback) {
-    io_context.post([callback]() {
+    boost::asio::post( io_context, [callback]() {
         std::this_thread::sleep_for(100ms);
         callback(42);
     });
