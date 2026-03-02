@@ -1,3 +1,5 @@
+<p align='center'><a href='https://www.eventbrite.com/e/ship-production-pytorch-system-in-a-day-train-optimize-deploy-workshop-tickets-1983348934052?aff=GitHub'><img src='https://static.packt-cdn.com/assets/images/packt+events/workshop_ashish_github.png'/></a></p>
+
 # Asynchronous Programming with C++
 
 <a href="https://www.packtpub.com/en-in/product/asynchronous-programming-with-c-9781835884256"><img src="https://content.packt.com/_/image/original/B22219/cover_image.jpg" alt="Shipping & Fee Details" height="256px" align="right"></a>
