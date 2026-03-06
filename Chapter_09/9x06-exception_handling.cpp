@@ -13,7 +13,7 @@ void my_handler() {
 }
 
 void post_handler(boost::asio::io_context& io_context) { 
-    io_context.post(my_handler); 
+    boost::asio::post( io_context, my_handler); 
 }
 
 int main() {

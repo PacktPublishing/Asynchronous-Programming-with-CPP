@@ -4,3 +4,5 @@ CMakeFiles
 Makefile
 *.cmake
 CMakeCache.txt
+.cache
+compile_commands.json
