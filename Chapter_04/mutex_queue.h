@@ -62,7 +62,7 @@ class queue {
 
         lock.unlock();
 
-        not_empty_.notify_one();
+        not_full_.notify_one();
 
         return true;
     }
