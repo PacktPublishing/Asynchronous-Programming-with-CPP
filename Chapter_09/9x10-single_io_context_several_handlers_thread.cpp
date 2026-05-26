@@ -23,10 +23,9 @@ int main() {
 
     std::jthread io_context_thread([&io_context]() { io_context.run(); });
 
-    const int num_threads = 4;
-    std::vector<std::jthread> threads;
+    const int num_threads = 4;    
     for (int i = 0; i < num_threads; ++i) {
-        background_task(i);
+        background_task(i);//io_context_thread will pick up the posted tasks
     }
 
     std::this_thread::sleep_for(5s);
